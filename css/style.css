@@ -1,0 +1,226 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-touch-callout:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;
+    -moz-user-drag:none;
+    -webkit-user-drag:none;
+    -ms-user-drag:none;
+    -khtml-user-drag:none;
+    user-drag:none
+}
+html, body {
+    width:100%;
+    height:100%;
+    overflow:hidden
+}
+body {
+    background:#1b6181
+}
+#gameWrap {
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    position:relative
+}
+#loading {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:40px;
+    margin-left:-20px;
+    z-index:2;
+    text-align:center;
+    color:#fff
+}
+#picks {
+    display:none;
+    width:90px;
+    height:70px;
+    line-height:70px;
+    position:absolute;
+    left:0;
+    top:0;
+    padding-left:60px;
+    background:url(../img/cake.png) no-repeat;
+    background-size:40px 30px;
+    background-position:10px 20px;
+    font-size:34px;
+    color:#FFF
+}
+.mask {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, .4);
+    color:#fff
+}
+.show-mask .mask {
+    display:block
+}
+.panel {
+    position:absolute;
+    width:290px;
+    left:50%;
+    margin-left:-145px;
+    overflow:hidden;
+    padding-top:128px;
+    transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    opacity:0;
+    transform:translate3d(0, -100px, 0);
+    -webkit-transform:translate3d(0, -100px, 0);
+    -moz-transform:translate3d(0, -100px, 0);
+    -ms-transform:translate3d(0, -100px, 0);
+    -o-transform:translate3d(0, -100px, 0)
+}
+.show-mask .panel {
+    opacity:1;
+    display:block;
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
+    -moz-transform:translate3d(0, 0, 0);
+    -ms-transform:translate3d(0, 0, 0);
+    -o-transform:translate3d(0, 0, 0)
+}
+.info {
+    width:260px;
+    background:#20310f;
+    padding:20px 15px;
+    border-radius:10px;
+    text-align:center;
+    margin-bottom:10px;
+    font-size:20px
+}
+.desc {
+    font-size:12px;
+    color:#ddd
+}
+.btn {
+    color:#fff;
+    display:inline-block;
+    text-align:center;
+    cursor:pointer;
+    background:#01cc00;
+    border-radius:5px;
+    box-shadow:0 3px 0 #025102;
+    font-size:18px;
+    line-height:20px;
+    padding:10px;
+    margin-right:5px;
+    margin-left:5px
+}
+.btn-bar {
+    padding:0 5px;
+    text-align:center
+}
+.btn-share {
+    background:#5a93fe;
+    box-shadow:0 3px 0 #039;
+    margin-right:15px
+}
+#mask2 {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#333;
+    opacity:.9;
+    text-align:center;
+    display:none
+}
+#mask2 div {
+    height:20px;
+    line-height:20px;
+    font-size:18px;
+    position:absolute;
+    width:100%;
+    top:50%;
+    left:0;
+    margin-top:-10px;
+    color:#fff
+}
+.weixin-download {
+    display:none
+}
+.weixin-download-mask {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#000;
+    opacity:.8
+}
+.weixin-download-tip {
+    width:90%;
+    position:fixed;
+    top:5px;
+    left:50%;
+    margin-left:-45%;
+    padding:10px 5px;
+    text-align:center;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(255, 255, 255, 0.8);
+    color:#333;
+    font-size:14px
+}
+.bg {
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#051827), to(#1B6181), color-stop(.6, #1B6181));
+    width:100%;
+    height:100%;
+    position:absolute
+}
+.star {
+    background-image:url('../img/star.png');
+    width:100%;
+    height:100%;
+    position:absolute
+}
+.lottery {
+    position:absolute;
+    width:80%;
+    left:50%;
+    top:40%;
+    margin-left:-40%
+}
+.lotteryTip {
+    background:#20310f;
+    padding:20px 15px;
+    border-radius:10px;
+    text-align:center;
+    margin-bottom:10px;
+    font-size:20px;
+    color:#ddd
+}
+.lotteryBtn {
+    border:0;
+    width:100%;
+    height:40px;
+    -webkit-border-radius:22px;
+    border-radius:22px;
+    outline:0;
+    color:#fff;
+    font-size:14px;
+    background:#ff9308;
+    -webkit-box-shadow:0 3px 1px #c36e00;
+    box-shadow:0 3px 1px #c36e00
+}
+.lotteryBtn:active {
+    background:#e88300;
+    -webkit-box-shadow:0 3px 1px #b76803;
+    box-shadow:0 3px 1px #b76803
+}
