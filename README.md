@@ -2,6 +2,8 @@
 
 在线地址：[http://bao.e.189.cn/module/games/](http://bao.e.189.cn/module/games/)
 
+二维码：![](http://ww1.sinaimg.cn/small/8b30c2fbgw1elytdpg00sj207s07sdfz.jpg)
+
 运用createJS开发，由于时间紧迫，代码写的比较乱。对安卓手机进行了适配，但是还不够完美，存在很多问题。
 
 
